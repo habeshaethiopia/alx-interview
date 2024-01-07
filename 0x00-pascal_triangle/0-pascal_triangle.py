@@ -15,5 +15,3 @@ def pascal_triangle(n):
             temp += [1]
         ans.append(temp)
     return ans
-if __name__ == "__main__":
-    print(*[i for i in pascal_triangle(50)],sep='\n')
