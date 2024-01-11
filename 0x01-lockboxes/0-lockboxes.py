@@ -5,11 +5,10 @@
 def canUnlockAll(rooms):
     """method that determines if all the boxes can be opened"""
     opened = set()
-    stack = [0]
-    while len(stack) > 0:
-        x = stack.pop()
+    queue = [0]
+    while queue:
+        x = queue.pop(0)
         if x not in opened:
             opened.add(x)
-            stack.extend(rooms[x])
-    else:
-        return set(range(len(rooms))).issubset(set(opened))
+            queue.extend(rooms[x])
+    return len(opened) == len(rooms)
