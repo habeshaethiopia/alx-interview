@@ -1,4 +1,4 @@
-# !/usr/bin/python3
+#!/usr/bin/python3
 def minOperations(number):
     res = 0
     i = 2
