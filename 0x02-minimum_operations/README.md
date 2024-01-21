@@ -13,5 +13,5 @@ To use this script, import it in your Python program and call the `find` functio
 ```python
 import minoperations
 
-result = minoperations.find(10)
+result = minoperations.minOperations(10)
 print(result)
