@@ -1,4 +1,5 @@
-def find(number):
+# !/usr/bin/python3
+def minOperations(number):
     res = 0
     i = 2
     pri = 1
