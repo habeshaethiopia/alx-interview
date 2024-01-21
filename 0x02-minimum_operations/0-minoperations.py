@@ -1,5 +1,10 @@
 #!/usr/bin/python3
+"""alx interview question about
+finding a minimum capy and past operation"""
+
+
 def minOperations(number):
+    """The implimentation"""
     res = 0
     i = 2
     pri = 1
