@@ -38,5 +38,4 @@ def print_stats() -> None:
         my_print(dic, size)
 
 
-
 print_stats()
