@@ -27,11 +27,13 @@ def print_stats() -> None:
                 if c <= 10:
                     size += int(s[length - 1])
                     if int(s[-2]) in status:
-                        dic[int(s[-2])] = 1 if int(s[-2]) not in dic else dic[int(s[-2])] + 1
+                        dic[int(s[-2])] = (
+                            1 if int(s[-2]) not in dic else dic[int(s[-2])] + 1
+                        )
                     if c == 10:
                         my_print(dic, size)
                         c = 0
-                
+
     finally:
         my_print(dic, size)
 
