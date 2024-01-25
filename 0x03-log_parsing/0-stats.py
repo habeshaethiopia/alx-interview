@@ -38,5 +38,5 @@ def print_stats() -> None:
         my_print(dic, size)
 
 
-if __name__ == "__main__":
-    print_stats()
+
+print_stats()
