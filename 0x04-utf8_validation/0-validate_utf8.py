@@ -55,20 +55,3 @@ def byte_encoding(byte_len, data, i) -> bool:
         if data[j] & 1 << 6 != 0:
             return False
     return True
-
-
-if __name__ == "__main__":
-    data = [197, 130, 1]
-    print(validUTF8(data))
-
-    data = [235, 140, 4]
-    print(validUTF8(data))
-
-    data = [65]
-    print(validUTF8(data))
-
-    data = [80, 121, 116, 104, 111, 110, 32, 105, 115, 32, 99, 111, 111, 108, 33]
-    print(validUTF8(data))
-
-    data = [229, 65, 127, 256]
-    print(validUTF8(data))
